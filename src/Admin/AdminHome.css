@@ -1,0 +1,22 @@
+/* src/AdminHome.css */
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden;
+  }
+  
+  .main-content {
+    display: flex;
+    flex: 1; /* Fill the remaining space after the navbar */
+    overflow: hidden;
+  }
+  
+  .content-area {
+    margin-left: 250px; /* Sidebar width */
+    padding: 20px;
+    background-color: #ecf0f1;
+    flex: 1; /* Take the remaining horizontal space */
+    overflow-y: auto; /* Allows scrolling if content is too tall */
+  }
+  

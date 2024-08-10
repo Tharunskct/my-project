@@ -1,0 +1,14 @@
+.footer-container {
+    background-color: #4a90e2; /* Blue background for the footer */
+    color: #fff; /* White text color */
+    padding: 10px 0; /* Vertical padding */
+    width: 1513px;
+    text-align: center; /* Center text */
+    margin-top: 67px;
+  }
+  
+  .footer-bottom {
+    font-size: 0.9em; /* Slightly smaller font size for the copyright text */
+    margin: 0; /* Remove default margin */
+  }
+  

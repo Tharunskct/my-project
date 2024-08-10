@@ -1,0 +1,87 @@
+/* General styling for form container */
+.form-container {
+    padding: 60px 20px;
+    background-color: #f5af1924;
+    color: #333;
+    line-height: 1.6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 600px;
+    margin-top: 450px;
+  }
+  
+  .form-container h1 {
+    text-align: center;
+    color: #4a90e2;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-in-out;
+  }
+  
+  .complaint-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .complaint-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .complaint-form .form-group input,
+  .complaint-form .form-group select,
+  .complaint-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+  }
+  
+  .complaint-form .form-group textarea {
+    resize: vertical;
+  }
+  
+  .complaint-form .submit-button {
+    width: 20%;
+    margin-left: 250px;
+    padding: 8px 16px; /* Reduced padding */
+    background-color: hsl(212, 72%, 59%);
+    color: #fff;
+    border: none;
+    border-radius: 4px; /* Adjusted border-radius */
+    font-size: 0.9rem; /* Reduced font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .complaint-form .submit-button:hover {
+    background-color: #357ABD;
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Animations */
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .form-container {
+      padding: 40px 10px;
+    }
+  
+    .complaint-form .form-group input,
+    .complaint-form .form-group select,
+    .complaint-form .form-group textarea {
+      font-size: 0.9rem;
+    }
+  
+    .complaint-form .submit-button {
+      font-size: 0.8rem; /* Adjusted for responsive design */
+    }
+  }
+  

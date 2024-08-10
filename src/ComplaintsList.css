@@ -1,0 +1,83 @@
+/* Container for the whole complaints list */
+.complaints-list-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #f0f4f8, #e0eafc);
+  border: 1px solid #ddd;
+}
+
+/* Header styling */
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+  position: relative;
+}
+
+/* Header underline effect */
+h1::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: #1976d2; /* Primary color */
+  border-radius: 2px;
+  margin: 10px auto 0;
+}
+
+/* List styling */
+.complaints-list {
+  list-style-type: none;
+  padding: 0;
+  max-height: 500px; /* Adjust as needed */
+  overflow-y: auto;
+  margin: 0;
+}
+
+/* Individual complaint item styling */
+.complaint-item {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for complaint items */
+.complaint-item:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+
+/* Text styling within complaint items */
+.complaint-item p {
+  margin: 8px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.complaint-item strong {
+  color: #1976d2; /* Primary color */
+  font-weight: bold;
+}
+
+/* Scrollbar styling */
+.complaints-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.complaints-list::-webkit-scrollbar-thumb {
+  background: #007bff; /* Accent color */
+  border-radius: 10px;
+}
+
+.complaints-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}

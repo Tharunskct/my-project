@@ -1,0 +1,19 @@
+.product-section {
+  background: #e5e5e5;
+  height: fit-content;
+  padding: 20px 0;
+  margin-top: 700px;
+}
+.product-section h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #333;
+}
+
+.product-section .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}

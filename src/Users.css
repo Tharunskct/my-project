@@ -1,0 +1,43 @@
+/* src/pages/Users.css */
+.users-page {
+    padding: 20px;
+    background-color: #f4f6f8;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 580px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .users-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .user-item {
+    background-color: #ffffff;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .user-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  

@@ -1,0 +1,353 @@
+/* General styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  background-size: cover;
+}
+
+/* Main container styling */
+.login-container {
+  display: flex;
+  width: 1000px;
+  max-width: 100%;
+  height: 80vh;
+  background-color: rgba(11, 11, 11, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin-bottom: 0px; /* Added margin-top to create space */
+  position: relative;
+  animation: containerZoom 1s ease-in-out, backgroundAnimation 5s infinite alternate;
+}
+
+/* Left side container styling */
+.left-side {
+  flex: 1;
+  background: linear-gradient(135deg, #4f4fff, #a16dd0);
+  background-image: url(image6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.left-side img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: imageTilt 5s infinite alternate;
+}
+
+/* Right side container styling */
+.right-side {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #cdc2c2;
+  align-items: center;
+  text-align: center;
+  animation: rightSideFade 1s ease-in;
+}
+
+/* Title styling */
+.login-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 20px;
+  animation: titleSlideUp 1s ease-in-out, bounce 1s infinite;
+}
+
+/* Input group styling */
+.input-group {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #e0e0e0;
+  position: relative;
+}
+
+.input-group input {
+  border: none;
+  padding: 10px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  color: #666666;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:focus {
+  animation: inputFocus 0.5s forwards;
+}
+
+/* Icon styling */
+.icon {
+  padding: 10px;
+  color: #666666;
+  transition: color 0.3s;
+  
+}
+
+/* Password link styling */
+.pass {
+  text-align: right;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.pass a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.pass a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* Login button styling */
+.login-button {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  background: linear-gradient(to right, #4f4fff, #a16dd0);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 20px;
+  animation: pulsate 2s infinite;
+}
+
+.login-button:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Separator styling */
+.separator {
+  margin: 20px 0;
+  color: #888888;
+  font-size: 14px;
+}
+
+/* Social login container styling */
+.social-login-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Social button styling */
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.3s, transform 0.3s;
+  animation: bounce 2s infinite;
+}
+
+.social-button:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+/* Social icons styling */
+.social-icon {
+  font-size: 24px;
+  color: white;
+  
+}
+
+/* Facebook button styling */
+.facebook {
+  background-color: #3b5998;
+}
+
+/* Twitter button styling */
+.twitter {
+  background-color: #1da1f2;
+}
+
+/* Google button styling */
+.google {
+  background-color: #db4437;
+}
+
+/* Signup link styling */
+.signup-link {
+  color: #666666;
+  font-size: 14px;
+}
+
+.signup-link a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 5px;
+  transition: color 0.3s;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-side {
+    height: 200px;
+  }
+}
+
+/* Bounce effect for login form */
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/* Pulsating effect for buttons */
+@keyframes pulsate {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.7; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Animate input fields on focus */
+@keyframes inputFocus {
+  0% { border-color: #e0e0e0; box-shadow: 0 0 0 rgba(0, 0, 0, 0); }
+  100% { border-color: #4f4fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+}
+
+/* Bounce effect for social buttons */
+.social-button {
+  animation: bounce 2s infinite;
+}
+
+/* Pulsating effect for login button */
+.login-button {
+  animation: pulsate 2s infinite;
+}
+
+/* Rotate effect for icons */
+
+
+/* Input field focus animation */
+.input-group input:focus {
+  animation: inputFocus 0.5s forwards;
+}
+
+/* Animated background effect */
+@keyframes backgroundAnimation {
+  0% { background-color: rgba(11, 11, 11, 0.1); }
+  50% { background-color: rgba(11, 11, 11, 0.2); }
+  100% { background-color: rgba(11, 11, 11, 0.1); }
+}
+
+/* Bounce animation for login title */
+.login-title {
+  animation: bounce 1s infinite;
+}
+
+/* Slide in from bottom effect */
+@keyframes slideInBottom {
+  0% { transform: translateY(100%); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Fade in and scale up effect */
+@keyframes fadeInScaleUp {
+  0% { opacity: 0; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* Glow effect for input fields */
+@keyframes inputGlow {
+  0% { box-shadow: 0 0 5px rgba(255, 255, 255, 0.2); }
+  50% { box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); }
+  100% { box-shadow: 0 0 5px rgba(255, 255, 255, 0.2); }
+}
+
+/* Flash effect for login button */
+@keyframes flash {
+  0% { background-color: #4f4fff; }
+  50% { background-color: #a16dd0; }
+   100% { background-color: #4f4fff; }
+}
+
+/* Rotate and bounce effect for social icons */
+@keyframes rotateBounce {
+  0% { transform: rotate(0deg) translateY(0); }
+  50% { transform: rotate(180deg) translateY(-10px); }
+  100% { transform: rotate(360deg) translateY(0); }
+}
+
+/* Zoom in effect for login title */
+@keyframes zoomIn {
+  0% { transform: scale(0.9); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Apply animations */
+.login-container {
+  animation: containerZoom 1s ease-in-out, backgroundAnimation 5s infinite alternate;
+}
+
+.left-side {
+  animation: slideInBottom 1s ease-out;
+}
+
+.left-side img {
+  animation: imageTilt 5s infinite alternate;
+}
+
+.right-side {
+  animation: rightSideFade 1s ease-in;
+}
+
+.login-title {
+  animation: zoomIn 1s ease-in-out, bounce 1s infinite;
+}
+
+.input-group input:focus {
+  animation: inputGlow 0.5s infinite alternate;
+}
+
+.login-button {
+  animation: pulsate 2s infinite, flash 3s infinite alternate;
+}

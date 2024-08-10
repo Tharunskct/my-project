@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* General Container */
+.about-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  overflow: hidden;
+  animation: containerFadeIn 0.8s ease-out, containerSlideIn 0.8s ease-out;
+}
+
+/* Image Section */
+.image-section {
+  flex: 1;
+  background-image: url('https://i.pinimg.com/736x/7c/e9/1a/7ce91ace809f04a7c6b43cae7328498b--why-read-rural-india.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-right: 2px solid #ddd;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  animation: fadeInImage 1.5s ease-in-out; /* New subtle fade-in effect */
+}
+
+/* Content Section */
+.content-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+  text-align: center;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  animation: contentFadeIn 0.8s ease-out, contentSlideUp 0.8s ease-out;
+}
+
+/* Heading Animation */
+.content-section h1 {
+  margin-bottom: 20px;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #444;
+  animation: headingFadeIn 1s ease-out, headingPulse 2s infinite ease-in-out;
+}
+
+/* Paragraph Animation */
+.content-section p {
+  margin-bottom: 20px;
+  line-height: 1.8;
+  font-size: 1.2rem;
+  color: #666;
+  opacity: 0;
+  animation: paragraphFadeIn 1s ease-out forwards, paragraphSlideIn 0.8s ease-out;
+  animation-delay: 0.5s;
+}
+
+/* Keyframe Animations */
+@keyframes containerFadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes containerSlideIn {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
+}
+
+/* New subtle fade-in effect for image */
+@keyframes fadeInImage {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes contentFadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes contentSlideUp {
+  0% { transform: translateY(50px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes headingFadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* More pronounced heading animation */
+@keyframes headingPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes paragraphFadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes paragraphSlideIn {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes socialIconsFadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes socialIconsPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+@keyframes iconBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
