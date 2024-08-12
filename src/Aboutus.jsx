@@ -10,7 +10,7 @@ const Aboutus = () => {
       <NavBar/>
       <div className="image-section"></div>
       <div className="content-section">
-        <h1><u>About Us</u></h1>
+        <h1>About Us</h1>
         <p>
           Welcome to our community! We are passionate about bringing people together and 
           creating a place where everyone feels at home. Our goal is to provide a platform 
